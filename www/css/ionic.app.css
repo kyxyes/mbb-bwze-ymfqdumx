@@ -8728,10 +8728,15 @@ a.button {
  * Scrollable iFrames
  * --------------------------------------------------
  */
+.iframe-parent .scroll {
+  height: 100%;
+}
 .iframe-wrapper {
-  position: fixed;
-  -webkit-overflow-scrolling: touch;
-  overflow: scroll; }
+  position: relative;
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+}
   .iframe-wrapper iframe {
     height: 100%;
     width: 100%; }

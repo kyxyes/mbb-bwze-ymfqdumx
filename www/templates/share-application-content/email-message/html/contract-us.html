@@ -9,9 +9,9 @@
     <!--toolbar section-->
     <md-toolbar class="md-tall md-primary toolbar-with-image">
         <div>
-            <h1>Contract Us</h1>
+            <h1>Hubungi Kami</h1>
 
-            <h2>We love Material Design</h2>
+            <h2>Perbadanan Kemajuan Negeri Selangor</h2>
         </div>
     </md-toolbar>
     <!--end toolbar section-->
@@ -28,7 +28,7 @@
         <!--header section-->
         <div class="row header">
             <div class="col">
-                Contact Our Team:
+                Hubungi kami seperti berikut:
             </div>
 
         </div> <!--end header section-->
@@ -36,15 +36,21 @@
         <!--content section-->
         <div class="row content">
             <div class="col-75">
+              Email
+              <br/>
                 {{contractInfo.email}}
             </div>
             <div class="col-25">
+
                 <i class="ion-android-mail" ng-click="sentEmail(contractInfo.email)"></i>
             </div>
         </div>
 
         <div class="row content">
             <div class="col-75">
+               <noscript>
+
+              </noscript>Telefon<br/>
                 {{contractInfo.telephone}}
             </div>
             <div class="col-25">
@@ -52,22 +58,37 @@
             </div>
         </div>
 
+        <div class="row content">
+            <div class="col-75">
+              Fax
+              <br/>
+                {{contractInfo.fax}}
+            </div>
+            <div class="col-25">
+                <i class="fa fa-fax"></i>
+            </div>
+        </div>
+
         <div class="row header">
             <div class="col">
-                Address:
+                Alamat:
             </div>
         </div>
         <div class="row content">
             <div class="col-90">
-                99 Sukhumvit Road
+              Bahagian Perkhidmatan Pelanggan,
                 <br/>
-                Bangkok Thailand
+                Tingkat 3, Kompleks PKNS,
+                <br/>
+                Persiaran Tasik, 40505 Shah Alam,
+                <br/>
+                Selangor Darul Ehsan
             </div>
 
         </div>
         <div class="row content">
             <div class="col-90">
-                Please contract us if you have any questions.
+                Sila hubungi kami jika ada sebarang masalah atau pertanyaan
             </div>
         </div>
         <!--end content section-->
