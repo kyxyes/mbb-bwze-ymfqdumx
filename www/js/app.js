@@ -22,8 +22,8 @@ window.globalVariable = {
         wordpressColor: "#0087BE"
     },// End custom color style variable
     startPage: {
-        url: "/app/dashboard",//Url of start page.
-        state: "app.dashboard"//State name of start page.
+        url: "/app/expense",//Url of start page.
+        state: "app.expense"//State name of start page.
     },
     message: {
         errorMessage: "Technical error please try again later." //Default error message.
