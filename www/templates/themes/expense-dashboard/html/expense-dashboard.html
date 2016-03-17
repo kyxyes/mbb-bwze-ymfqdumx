@@ -16,13 +16,12 @@
     </ion-nav-buttons> <!--end right button on navigation bar-->
 
     <!--expense toolbar section-->
-    <md-toolbar class="bar-subheader md-tall md-primary toolbar-expense">
+    <md-toolbar class="bar-subheader md-tall md-primary toolbar-expense material-background-bar">
+
         <div>
             <img src="img/pkns.png" class="user-img"/>
-
-            <h1>PKNS</h1>
-
-            <h2>Perbadanan Kemajuan Negeri Selangor</h2>
+              <h1><b>PKNS</b></h1>
+              <h2><b>Perbadanan Kemajuan Negeri Selangor</b></h2>
         </div>
         <a class="md-button md-accent md-fab fab-toolbar-medium" aria-label="Add">
             <i class="icon ion-plus"></i>
@@ -31,63 +30,6 @@
 
     <!--expense content section-->
     <ion-content id="expense-dashboard-content">
-
-        <!--Below code it will disable animation to better performance-->
-        <div ng-if="!isAnimated" class="list-expense-menu">
-            <div class="list-expense-menu-item"  ng-click="doSomeThing()">
-                <div class="row">
-                    <div class="col-20">
-                        <i class="fa fa-users"></i>
-                    </div>
-                    <div class="col-80 menu">
-                        <p class="header">Orang Awam</p>
-
-                        <p class="detail">detail</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="list-expense-menu-item"  ng-click="doSomeThing()">
-                <div class="row">
-                    <div class="col-20">
-                        <i class="fa fa-sign-in"></i>
-                    </div>
-                    <div class="col-80 menu">
-
-                        <p class="header">Warga PKNS</p>
-
-                        <p class="detail">Ahli/Staf PKNS</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="list-expense-menu-item"  ng-click="doSomeThing()">
-                <div class="row">
-                    <div class="col-20">
-                        <i class="fa fa-inbox"></i>
-                    </div>
-                    <div class="col-80 menu">
-
-                        <p class="header">Usahawan</p>
-
-                        <p class="detail">detail</p>
-                    </div>
-                </div>
-            </div>
-            <div class="list-expense-menu-item"  ng-click="doSomeThing()">
-                <div class="row">
-                    <div class="col-20">
-                        <i class="fa fa-line-chart"></i>
-                    </div>
-                    <div class="col-80 menu">
-
-                        <p class="header">Perkhidmatan</p>
-
-                        <p class="detail">detail</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!--Below code it will show animation when selecting row.-->
         <md-list ng-if="isAnimated">
@@ -98,38 +40,38 @@
                 <div class="col-80 menu">
                     <p class="header">Orang Awam</p>
 
-                    <p class="detail">Add your budget to start saving.</p>
+                    <p class="detail">Orang luar yang menggunakan khidmat dan servis</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
 
             <md-list-item class="row" ng-click="doSomeThing()">
                 <div class="col-20 icon">
-                    <i class="fa fa-sign-in"></i>
+                    <i class="fa fa-user"></i>
                 </div>
                 <div class="col-80 menu">
                     <p class="header">Warga PKNS</p>
 
-                    <p class="detail">View expense history report</p>
+                    <p class="detail">Ahli dan Staf PKNS</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
 
             <md-list-item class="row" ng-click="doSomeThing()">
                 <div class="col-20 icon">
-                    <i class="fa fa-inbox"></i>
+                    <i class="fa fa-briefcase"></i>
                 </div>
                 <div class="col-80 menu">
                     <p class="header">Usahawan</p>
 
-                    <p class="detail">Export expense to e-Mail</p>
+                    <p class="detail">Pengusaha dan Pemaju</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
 
             <md-list-item class="row" ng-click="doSomeThing()">
                 <div class="col-20 icon">
-                    <i class="fa fa-line-chart"></i>
+                    <i class="fa fa-cog"></i>
                 </div>
                 <div class="col-80 menu">
                     <p class="header">Perkhidmatan</p>
@@ -141,4 +83,4 @@
 
         </md-list>
     </ion-content><!--end expense content section-->
-</ion-view>
+  </ion-view>

@@ -190,6 +190,20 @@ md-sidenav {
       .social-card .social-card-wp-footer .col.no-border-bottom {
         border-bottom: none; }
 
+.bar-subheader md-tall md-primary toolbar-expense {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.material-background-bar{
+  background-image: url('../img/pknsBG2.png') !important;
+  background-position: center !important;
+}
+
+
+
+
 .pin {
   display: inline-block;
   background: #fefefe;
