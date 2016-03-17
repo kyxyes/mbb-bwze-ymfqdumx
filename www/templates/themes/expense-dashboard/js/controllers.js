@@ -1,5 +1,5 @@
 // Controller of expense dashboard page.
-appControllers.controller('expenseDashboardCtrl', function ($scope, $state, $timeout, $mdBottomSheet, $stateParams, $mdToast) {
+appControllers.controller('expenseDashboardCtrl', function ($scope, $state, $timeout, $mdBottomSheet, $stateParams, $cordovaOauth, $http, localStorage, $mdToast) {
 
     //$scope.isAnimated is the variable that use for receive object data from state params.
     //For enable/disable row animation.
