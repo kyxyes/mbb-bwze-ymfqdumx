@@ -15,6 +15,14 @@ appControllers.controller('expenseDashboardCtrl', function ($scope, $state, $tim
         $state.go("app.expenseSetting");
     };// End goToSetting.
 
+    $scope.showGridBottomSheet = function ($event) {
+        $mdBottomSheet.show({
+            templateUrl: 'ui-grid-bottom-sheet-template',
+            targetEvent: $event,
+            scope: $scope.$new(false),
+        });
+    };// End of showGridBottomSheet.
+
 });// End of controller expense dashboard.
 
 

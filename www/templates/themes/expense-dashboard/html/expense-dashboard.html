@@ -24,7 +24,7 @@
               <h2><b>Perbadanan Kemajuan Negeri Selangor</b></h2>
         </div>
         <a class="md-button md-accent md-fab fab-toolbar-medium"
-           ng-click="sharedProduct($event)"
+           ng-click="showGridBottomSheet($event)"
            aria-label="showListBottomSheet">
             <i class="ion-android-share-alt"></i>
         </a>
@@ -86,42 +86,43 @@
         </md-list>
     </ion-content><!--end expense content section-->
 
-    <script type="text/ng-template" id="bottom-sheet-shared.html">
+    <script type="text/ng-template" id="ui-grid-bottom-sheet-template">
         <md-bottom-sheet class="md-grid">
             <!--list section-->
             <md-list id="bottom-sheet-grid-md-list">
                 <md-list-item>
-                    <a class="md-grid-item-content" ng-click="sharedFacebook()">
+                    <a class="md-grid-item-content" ng-click="closeListBottomSheet()">
                         <md-icon md-svg-src="facebook"></md-icon>
                         <div class="md-grid-text"> Facebook</div>
                     </a>
                 </md-list-item>
                 <md-list-item>
-                    <a class="md-grid-item-content" ng-click="sharedTwitter()">
+                    <a class="md-grid-item-content" ng-click="closeListBottomSheet()">
                         <md-icon md-svg-src="twitter"></md-icon>
                         <div class="md-grid-text"> Twitter</div>
                     </a>
                 </md-list-item>
                 <md-list-item>
-                    <a class="md-grid-item-content" ng-click="sharedMail()">
+                    <a class="md-grid-item-content" ng-click="closeListBottomSheet()">
                         <md-icon md-svg-src="mail"></md-icon>
                         <div class="md-grid-text"> Mail</div>
                     </a>
                 </md-list-item>
                 <md-list-item>
-                    <a class="md-grid-item-content" ng-click="saveImage()">
+                    <a class="md-grid-item-content" ng-click="closeListBottomSheet()">
                         <i class="ion-android-image"></i>
 
                         <div class="md-grid-text"> Save Image</div>
                     </a>
                 </md-list-item>
                 <md-list-item>
-                    <a class="md-grid-item-content" ng-click="sharedMore()">
+                    <a class="md-grid-item-content" ng-click="closeListBottomSheet()">
                         <md-icon md-svg-src="share-arrow"></md-icon>
                         <div class="md-grid-text"> More</div>
                     </a>
                 </md-list-item>
-            </md-list> <!--end list section-->
+            </md-list>
+            <!--end list section-->
         </md-bottom-sheet>
     </script>
   </ion-view>
