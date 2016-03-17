@@ -6,7 +6,7 @@
 // at Display a map section.
 appControllers.controller('iosMapConnectCtrl', function ($scope) {
 
-    // initialForm is the first activity in the controller. 
+    // initialForm is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
         //destinationLocation is latitude,longitude of the destination location.
@@ -14,7 +14,7 @@ appControllers.controller('iosMapConnectCtrl', function ($scope) {
     };// End initialForm
 
     // openIosMap is for open IOS Map application.
-    // Parameter :  
+    // Parameter :
     // targetDestinationLocation = latitude,longitude of the destination location.
     $scope.openIosMap = function (targetDestinationLocation) {
 
@@ -36,7 +36,7 @@ appControllers.controller('iosMapConnectCtrl', function ($scope) {
     };// End openIosMap
 
     // openGoogleMap is for open Google Map application.
-    // Parameter :  
+    // Parameter :
     // targetDestinationLocation = latitude,longitude of the destination location.
     $scope.openGoogleMap = function (targetDestinationLocation) {
 
