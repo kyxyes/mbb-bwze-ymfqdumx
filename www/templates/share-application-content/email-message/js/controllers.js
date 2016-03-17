@@ -3,39 +3,40 @@
 // $ cd your_project_path
 // $ ionic plugin remove nl.x-services.plugins.socialsharing
 // $ ionic plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git
-// 
+//
 // Learn more about $cordovaSocialSharing :
 // http://ngcordova.com/docs/plugins/socialSharing/
-// 
+//
 // For sent message you have to install $cordovaSMS by running the following
 // command in your cmd.exe for windows or terminal for mac:
 // $ cd your_project_path
 // $ ionic plugin remove com.cordova.plugins.sms
 // $ ionic plugin add https://github.com/cordova-sms/cordova-sms-plugin.git
-// 
+//
 // Learn more about $cordovaSMS :
 // http://ngcordova.com/docs/plugins/sms/
-// 
 //
-// For using mobile calling you must go to yourProjectPath/config.xml 
+//
+// For using mobile calling you must go to yourProjectPath/config.xml
 // and put this following code in the access area.
 // <access origin="tel:*" launch-external="yes"/>
-// 
+//
 // Controller of contract us page.
 appControllers.controller('contractUsCtrl', function ($scope, $cordovaSocialSharing, $cordovaSms) {
 
-    // This function is the first activity in the controller. 
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
         // $scope.contractInfo is store contract us data
         $scope.contractInfo = {
-            telephone: "099-999-9999",
-            email: "ionicmaterialdesign@gmail.com"
+            telephone: "03 - 5520 1234",
+            fax:"03 - 5510 3895",
+            email: "aduan @ pkns.gov.my"
         };
     };// End initialForm.
 
     // sentSms is for send message by calling $cordovaSms
-    // Parameter :  
+    // Parameter :
     // phoneNumber = number of sending message
     $scope.sentSms = function (phoneNumber) {
         //config options to sent message
@@ -51,7 +52,7 @@ appControllers.controller('contractUsCtrl', function ($scope, $cordovaSocialShar
     } // End sentSms.
 
     // sentEmail is for send email by calling $cordovaSocialSharing.
-    // Parameter :  
+    // Parameter :
     // email = email of receiver
     $scope.sentEmail = function (email) {
         $cordovaSocialSharing.shareViaEmail("", "", email, "", "", "");
@@ -61,7 +62,7 @@ appControllers.controller('contractUsCtrl', function ($scope, $cordovaSocialShar
     } // End sentEmail.
 
     // callTo is for using mobile calling.
-    // Parameter :  
+    // Parameter :
     // number = number that going to call.
     $scope.callTo = function (number) {
         window.open("tel:" + number);

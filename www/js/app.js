@@ -22,8 +22,8 @@ window.globalVariable = {
         wordpressColor: "#0087BE"
     },// End custom color style variable
     startPage: {
-        url: "/app/dashboard",//Url of start page.
-        state: "app.dashboard"//State name of start page.
+        url: "/app/expense",//Url of start page.
+        state: "app.expense"//State name of start page.
     },
     message: {
         errorMessage: "Technical error please try again later." //Default error message.
@@ -81,6 +81,15 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 "   color                     : " + appPrimaryColor + " !important;" +
                 "}";
         }// End create custom defaultStyle
+
+        //function getDefaultStyle() {
+          //  return "" +
+          //      ".material-background-bar { " +
+          //      "   background-image        : url('img/pknsBG.png') !important; " +
+          //      "   border-style            : none;" +
+          //      "   background-size         : initial !important;" +
+          //      "}";
+      //  }
 
         // Create custom style for product view.
         function getProductStyle() {
@@ -296,8 +305,8 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
         //Learn more about material theme: https://material.angularjs.org/latest/#/Theming/01_introduction
         $mdThemingProvider
             .theme('default')
-            .primaryPalette('indigo')
-            .accentPalette('pink');
+            .primaryPalette('red')
+            .accentPalette('amber');
 
         appPrimaryColor = $mdColorPalette[$mdThemingProvider._THEMES.default.colors.primary.name]["500"]; //Use for get base color of theme.
 

@@ -1,5 +1,5 @@
 // Controller of expense dashboard page.
-appControllers.controller('expenseDashboardCtrl', function ($scope,$state,$stateParams) {
+appControllers.controller('expenseDashboardCtrl', function ($scope, $state, $timeout, $mdBottomSheet, $stateParams, $mdToast) {
 
     //$scope.isAnimated is the variable that use for receive object data from state params.
     //For enable/disable row animation.
@@ -15,7 +15,16 @@ appControllers.controller('expenseDashboardCtrl', function ($scope,$state,$state
         $state.go("app.expenseSetting");
     };// End goToSetting.
 
+    $scope.showGridBottomSheet = function ($event) {
+        $mdBottomSheet.show({
+            templateUrl: 'ui-grid-bottom-sheet-template',
+            targetEvent: $event,
+            scope: $scope.$new(false),
+        });
+    };// End of showGridBottomSheet.
+
 });// End of controller expense dashboard.
+
 
 // Controller of expense dashboard setting.
 appControllers.controller('expenseDashboardSettingCtrl', function ($scope, $state,$ionicHistory,$ionicViewSwitcher) {

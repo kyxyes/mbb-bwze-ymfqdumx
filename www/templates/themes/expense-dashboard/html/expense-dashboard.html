@@ -5,7 +5,7 @@
 <!--State name : app.expense-->
 <!--URL : #app/expense-->
 
-<ion-view title="Expense" id="expense-dashboard">
+<ion-view title="UTAMA" id="expense-dashboard">
 
     <!--right button on navigation bar-->
     <ion-nav-buttons side="right">
@@ -16,124 +16,113 @@
     </ion-nav-buttons> <!--end right button on navigation bar-->
 
     <!--expense toolbar section-->
-    <md-toolbar class="bar-subheader md-tall md-primary toolbar-expense">
+    <md-toolbar class="bar-subheader md-tall md-primary toolbar-expense material-background-bar">
+
         <div>
-            <img src="img/profileAvatar.jpg" class="user-img"/>
-
-            <h1>John Able</h1>
-
-            <h2>Material Design</h2>
+            <img src="img/pkns.png" class="user-img"/>
+              <h1><b>PKNS</b></h1>
+              <h2><b>Perbadanan Kemajuan Negeri Selangor</b></h2>
         </div>
-        <a class="md-button md-accent md-fab fab-toolbar-medium" aria-label="Add">
-            <i class="icon ion-plus"></i>
+        <a class="md-button md-accent md-fab fab-toolbar-medium"
+           ng-click="showGridBottomSheet($event)"
+           aria-label="showListBottomSheet">
+            <i class="ion-android-share-alt"></i>
         </a>
     </md-toolbar><!--end expense toolbar section-->
 
     <!--expense content section-->
     <ion-content id="expense-dashboard-content">
 
-        <!--Below code it will disable animation to better performance-->
-        <div ng-if="!isAnimated" class="list-expense-menu">
-            <div class="list-expense-menu-item"  ng-click="doSomeThing()">
-                <div class="row">
-                    <div class="col-20">
-                        <i class="fa fa-money"></i>
-                    </div>
-                    <div class="col-80 menu">
-                        <p class="header">Add Budget</p>
-
-                        <p class="detail">Add your budget to start saving.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="list-expense-menu-item"  ng-click="doSomeThing()">
-                <div class="row">
-                    <div class="col-20">
-                        <i class="fa fa-sign-in"></i>
-                    </div>
-                    <div class="col-80 menu">
-                        <p class="header">Expense History</p>
-
-                        <p class="detail">View expense history report</p>
-                    </div>
-                </div>
-            </div>
-            <div class="list-expense-menu-item"  ng-click="doSomeThing()">
-                <div class="row">
-                    <div class="col-20">
-                        <i class="fa fa-inbox"></i>
-                    </div>
-                    <div class="col-80 menu">
-                        <p class="header">Export to e-Mail</p>
-
-                        <p class="detail">Export expense to e-Mail</p>
-                    </div>
-                </div>
-            </div>
-            <div class="list-expense-menu-item"  ng-click="doSomeThing()">
-                <div class="row">
-                    <div class="col-20">
-                        <i class="fa fa-line-chart"></i>
-                    </div>
-                    <div class="col-80 menu">
-                        <p class="header">Summary Report</p>
-
-                        <p class="detail">View summary report.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!--Below code it will show animation when selecting row.-->
         <md-list ng-if="isAnimated">
             <md-list-item class="row" ng-click="doSomeThing()">
                 <div class="col-20 icon">
-                    <i class="fa fa-money"></i>
+                    <i class="fa fa-users"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Add Budget</p>
+                    <p class="header">Orang Awam</p>
 
-                    <p class="detail">Add your budget to start saving.</p>
+                    <p class="detail">Orang luar yang menggunakan khidmat dan servis</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
 
             <md-list-item class="row" ng-click="doSomeThing()">
                 <div class="col-20 icon">
-                    <i class="fa fa-sign-in"></i>
+                    <i class="fa fa-user"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Expense History</p>
+                    <p class="header">Warga PKNS</p>
 
-                    <p class="detail">View expense history report</p>
+                    <p class="detail">Ahli dan Staf PKNS</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
 
             <md-list-item class="row" ng-click="doSomeThing()">
                 <div class="col-20 icon">
-                    <i class="fa fa-inbox"></i>
+                    <i class="fa fa-briefcase"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Export to e-Mail</p>
+                    <p class="header">Usahawan</p>
 
-                    <p class="detail">Export expense to e-Mail</p>
+                    <p class="detail">Pengusaha dan Pemaju</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
 
             <md-list-item class="row" ng-click="doSomeThing()">
                 <div class="col-20 icon">
-                    <i class="fa fa-line-chart"></i>
+                    <i class="fa fa-cog"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Summary Report</p>
+                    <p class="header">Perkhidmatan</p>
 
-                    <p class="detail">View summary report.</p>
+                    <p class="detail">Servis yang diberikan.</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
 
         </md-list>
     </ion-content><!--end expense content section-->
-</ion-view>
+
+    <script type="text/ng-template" id="ui-grid-bottom-sheet-template">
+        <md-bottom-sheet class="md-grid">
+            <!--list section-->
+            <md-list id="bottom-sheet-grid-md-list">
+                <md-list-item>
+                    <a class="md-grid-item-content" ng-click="closeListBottomSheet()">
+                        <md-icon md-svg-src="facebook"></md-icon>
+                        <div class="md-grid-text"> Facebook</div>
+                    </a>
+                </md-list-item>
+                <md-list-item>
+                    <a class="md-grid-item-content" ng-click="closeListBottomSheet()">
+                        <md-icon md-svg-src="twitter"></md-icon>
+                        <div class="md-grid-text"> Twitter</div>
+                    </a>
+                </md-list-item>
+                <md-list-item>
+                    <a class="md-grid-item-content" ng-click="closeListBottomSheet()">
+                        <md-icon md-svg-src="mail"></md-icon>
+                        <div class="md-grid-text"> Mail</div>
+                    </a>
+                </md-list-item>
+                <md-list-item>
+                    <a class="md-grid-item-content" ng-click="closeListBottomSheet()">
+                        <i class="ion-android-image"></i>
+
+                        <div class="md-grid-text"> Save Image</div>
+                    </a>
+                </md-list-item>
+                <md-list-item>
+                    <a class="md-grid-item-content" ng-click="closeListBottomSheet()">
+                        <md-icon md-svg-src="share-arrow"></md-icon>
+                        <div class="md-grid-text"> More</div>
+                    </a>
+                </md-list-item>
+            </md-list>
+            <!--end list section-->
+        </md-bottom-sheet>
+    </script>
+  </ion-view>
