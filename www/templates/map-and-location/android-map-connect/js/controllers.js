@@ -8,7 +8,7 @@ appControllers.controller('androidMapConnectCtrl', function ($scope) {
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
     	//destinationLocation is latitude,longitude of the destination location.
-        $scope.destinationLocation = "-37.817364,144.955464";
+        $scope.destinationLocation = " 3.070378,101.517234";
     };// End initialForm
 
     // openMap is for open Google Map application.
