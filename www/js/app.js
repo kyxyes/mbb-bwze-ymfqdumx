@@ -463,6 +463,16 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                     }
                 }
             })
+
+            .state('app.test', {
+                url: "test",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/facebook.html",
+                    }
+                }
+            })
+
             .state('app.googlePlusLogin', {
                 url: "/googlePlusLogin",
                 cache: false,
