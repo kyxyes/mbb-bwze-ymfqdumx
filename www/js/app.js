@@ -473,6 +473,15 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 }
             })
 
+            .state('app.pknsProperty', {
+                url: "property",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/PKNSProperty.html",
+                    }
+                }
+            })
+
             .state('app.googlePlusLogin', {
                 url: "/googlePlusLogin",
                 cache: false,
