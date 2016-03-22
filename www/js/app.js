@@ -30,7 +30,7 @@ window.globalVariable = {
     },
     oAuth: {
         dropbox: "your_api_key",//Use for Dropbox API clientID.
-        facebook: "your_api_key",//Use for Facebook API appID.
+        facebook: "148484448876917",//Use for Facebook API appID.
         foursquare: "your_api_key", //Use for Foursquare API clientID.
         instagram: "your_api_key",//Use for Instagram API clientID.
         googlePlus: "your_api_key",//Use for Google API clientID.

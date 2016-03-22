@@ -3,11 +3,11 @@
 // $ cd your_project_path
 // $ ionic plugin remove org.apache.cordova.inappbrowser
 // $ ionic plugin add org.apache.cordova.inappbrowser
-// 
+//
 // Learn more about $cordovaOauth :
 // http://ngcordova.com/docs/plugins/oauth/
-// 
-// object schema of facebookProfile that keep in localStorage is: 
+//
+// object schema of facebookProfile that keep in localStorage is:
 // [{
 //  name: facebook name,
 //  first_name: facebook firstname,
@@ -21,11 +21,11 @@
 //  id: facebook id,
 //  access_token: access_token
 // }]
-// 
+//
 // Controller of facebook login Page.
 appControllers.controller('facebookLoginCtrl', function ($scope, $state, $cordovaOauth, $http, localStorage) {
 
-    // This function is the first activity in the controller. 
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
 
@@ -54,9 +54,9 @@ appControllers.controller('facebookLoginCtrl', function ($scope, $state, $cordov
         $scope.userInfo = $scope.getUserProfile();
     }; // End initialForm.
 
-    // navigateTo is for navigate to other page 
+    // navigateTo is for navigate to other page
     // by using targetPage to be the destination page.
-    // Parameter :  
+    // Parameter :
     // targetPage = destination page.
     $scope.navigateTo = function (targetPage) {
         $state.go(targetPage);
@@ -88,7 +88,7 @@ appControllers.controller('facebookLoginCtrl', function ($scope, $state, $cordov
 
             // Calling $cordovaOauth.facebook for login facebook.
             // Format:
-            // $cordovaOauth.facebook(APP_ID,[FACEBOOK_PERMISION]) 
+            // $cordovaOauth.facebook(APP_ID,[FACEBOOK_PERMISION])
             // For APP_ID is window.globalVariable.oAuth.facebook from www/js/app.js at globalVariable session.
             $cordovaOauth.facebook(window.globalVariable.oAuth.facebook, ["publish_actions", "user_status", "user_birthday", "user_posts", "user_events"
                 , "email", "user_actions.news", "user_friends", "public_profile"]).then(function (result) {
@@ -140,7 +140,7 @@ appControllers.controller('facebookLoginCtrl', function ($scope, $state, $cordov
 // Controller of facebook profile Page.
 appControllers.controller('facebookProfileCtrl', function ($mdDialog, $scope, $state, $stateParams, $cordovaOauth, $ionicHistory, $http, localStorage, $timeout) {
 
-    // This function is the first activity in the controller. 
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
 
@@ -157,10 +157,10 @@ appControllers.controller('facebookProfileCtrl', function ($mdDialog, $scope, $s
         }, 2000);
     };// End initialForm.
 
-    // navigateTo is for navigate to other page 
-    // by using targetPage to be the destination page 
+    // navigateTo is for navigate to other page
+    // by using targetPage to be the destination page
     // and sending objectData to the destination page.
-    // Parameter :  
+    // Parameter :
     // targetPage = destination page.
     // objectData = object that will sent to destination page.
     $scope.navigateTo = function (targetPage, objectData) {
@@ -208,8 +208,8 @@ appControllers.controller('facebookProfileCtrl', function ($mdDialog, $scope, $s
 
 // Controller of facebook feed Page.
 appControllers.controller('facebookFeedCtrl', function ($scope, $state, $ionicHistory, $stateParams, $cordovaOauth, $http, localStorage) {
-   
-    // This function is the first activity in the controller. 
+
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
 
@@ -232,7 +232,7 @@ appControllers.controller('facebookFeedCtrl', function ($scope, $state, $ionicHi
     }; // End initialForm.
 
     // getFeedData is for get feed by calling to facebook API.
-    // Parameter :  
+    // Parameter :
     // IsInit(bool) = for check that page are loading more data or refresh data.
     $scope.getFeedData = function (IsInit) {
 
@@ -322,7 +322,7 @@ appControllers.controller('facebookFeedCtrl', function ($scope, $state, $ionicHi
             } else {
                 $scope.paging.next = result.data.paging.next;
             }// End checking for next page data.
-            
+
             // To stop loading progress.
             $scope.$broadcast('scroll.infiniteScrollComplete');
             $scope.isLoading = false;
@@ -353,8 +353,8 @@ appControllers.controller('facebookFeedCtrl', function ($scope, $state, $ionicHi
 
 // Controller of facebook friend list Page.
 appControllers.controller('facebookFriendListCtrl', function ($scope, $state, $ionicHistory, $stateParams, $cordovaOauth, $http, localStorage) {
-    
-    // This function is the first activity in the controller. 
+
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
 
@@ -377,7 +377,7 @@ appControllers.controller('facebookFriendListCtrl', function ($scope, $state, $i
     }; // End initialForm.
 
     // getFriendsData is for get friend list by calling to facebook API.
-    // Parameter :  
+    // Parameter :
     // IsInit(bool) = for check that page are loading more data or refresh data.
     $scope.getFriendsData = function (IsInit) {
 
@@ -469,14 +469,14 @@ appControllers.controller('facebookFriendListCtrl', function ($scope, $state, $i
             $scope.isLoading = false;
         });
     }; // End getNextFriendsData.
-    
-    // doRefresh is for refresh friends list. 
+
+    // doRefresh is for refresh friends list.
     $scope.doRefresh = function () {
         $scope.paging.shouldLoadData = false;
         $scope.getFriendsData(false);
     };// End doRefresh.
 
-    // loadMore is for loading more friends list. 
+    // loadMore is for loading more friends list.
     $scope.loadMore = function () {
         if ($scope.isLoading == false) {
             $scope.isLoading = true;
