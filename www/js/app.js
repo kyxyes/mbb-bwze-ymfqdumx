@@ -472,7 +472,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                     }
                 }
             })
-
+              // start showListBottomSheet link page
             .state('app.pknsProperty', {
                 url: "property",
                 views: {
@@ -504,10 +504,74 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 url: "sistemdalamanPKNS",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/themes/expense-dashboard/html/Direktori.html",
+                        templateUrl: "templates/themes/expense-dashboard/html/SistemDalaman.html",
                     }
                 }
             })
+
+            .state('app.programKeusahawanan', {
+                url: "programKeusahawanan",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/ProgramKeusahawanan.html",
+                    }
+                }
+            })
+
+            .state('app.akademiPKNS', {
+                url: "akademi",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/AkademiPKNS.html",
+                    }
+                }
+            })
+
+            .state('app.pejabatMaya', {
+                url: "pejabatMaya",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/PejabatMaya.html",
+                    }
+                }
+            })
+
+            .state('app.peluangPekerjaan', {
+                url: "peluangPekerjaan",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/PeluangPekerjaan.html",
+                    }
+                }
+            })
+
+            .state('app.sebutHarga', {
+                url: "sebutHarga",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/NotisSebutHarga.html",
+                    }
+                }
+            })
+
+            .state('app.pembayaranOnline', {
+                url: "sebutHarga",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/PembayaranOnline.html",
+                    }
+                }
+            })
+
+            .state('app.pembayaranOnlinePOS', {
+                url: "sebutHarga",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/PembayaranOnlinePOS.html",
+                    }
+                }
+            })//end of page link for showListBottomSheet
+
 
             .state('app.googlePlusLogin', {
                 url: "/googlePlusLogin",
