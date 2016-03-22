@@ -190,16 +190,20 @@ md-sidenav {
       .social-card .social-card-wp-footer .col.no-border-bottom {
         border-bottom: none; }
 
+
+.iframe-parent .scroll {
+  height: 100%;
+  width: 100%;
+}
+
 .iframe-wrapper{
   position: absolute;
   -webkit-overflow-scrolling: touch;
-  overflow: scroll;
+  /*overflow: scroll;*/
   width: 100%;
   height: 100%;
 }
-.iframe-parent .scroll {
-height: 100%;
-}
+
 
 .material-background-bar {
   background-image: url("../img/pknsBG2.png") !important;
