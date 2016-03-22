@@ -482,6 +482,33 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 }
             })
 
+            .state('app.pknsCareline', {
+                url: "careline",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/PKNScareline.html",
+                    }
+                }
+            })
+
+            .state('app.direktori', {
+                url: "direktori",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/Direktori.html",
+                    }
+                }
+            })
+
+            .state('app.sistemDalamanPKNS', {
+                url: "sistemdalamanPKNS",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/expense-dashboard/html/Direktori.html",
+                    }
+                }
+            })
+
             .state('app.googlePlusLogin', {
                 url: "/googlePlusLogin",
                 cache: false,
