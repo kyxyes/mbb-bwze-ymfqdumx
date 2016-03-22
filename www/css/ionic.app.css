@@ -32,7 +32,6 @@ $dark:                            #444 !default;
   src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("../lib/ionic/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("../lib/ionic/fonts/ionicons.woff?v=2.0.1") format("woff"), url("../lib/ionic/fonts/ionicons.woff") format("woff"), url("../lib/ionic/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal; }
-  
 
 .ion, .ionicons,
 .ion-alert:before,
@@ -8729,19 +8728,13 @@ a.button {
  * Scrollable iFrames
  * --------------------------------------------------
  */
- .iframe-parent .scroll {
-   height: 100%;
- }
- .iframe-wrapper {
-   position: relative;
-   overflow: scroll;
-   height: 100%;
-   width: 100%;
- }
- .iframe-wrapper iframe {
-   height: 100%;
-   width: 100%;
- }
+.iframe-wrapper {
+  position: fixed;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll; }
+  .iframe-wrapper iframe {
+    height: 100%;
+    width: 100%; }
 
 /**
  * Rounded
