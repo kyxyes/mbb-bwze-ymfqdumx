@@ -35,48 +35,45 @@
 
         <!--Below code it will show animation when selecting row.-->
         <md-list ng-if="isAnimated">
-            <md-list-item class="row" ng-click="doSomeThing()">
+            <md-list-item class="row" ng-click="showListBottomSheet1($event1)">
                 <div class="col-20 icon">
                     <i class="fa fa-users"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Orang Awam</p>
-
+                    <p class="header">Orang Awam</p></a>
                     <p class="detail">Orang luar yang menggunakan khidmat dan servis</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
 
-            <md-list-item class="row" ng-click="doSomeThing()">
+            <md-list-item class="row" ng-click="showListBottomSheet2($event2)">
                 <div class="col-20 icon">
                     <i class="fa fa-user"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Warga PKNS</p>
-
+                    <p class="header">Warga PKNS</p></a>
                     <p class="detail">Ahli dan Staf PKNS</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
 
-            <md-list-item class="row" ng-click="doSomeThing()">
+            <md-list-item class="row" ng-click="showListBottomSheet3($event3)">
                 <div class="col-20 icon">
                     <i class="fa fa-briefcase"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Usahawan</p>
-
+                    <p class="header">Usahawan</p></a>
                     <p class="detail">Pengusaha dan Pemaju</p>
                 </div>
             </md-list-item>
             <md-divider></md-divider>
 
-            <md-list-item class="row" ng-click="doSomeThing()">
+            <md-list-item class="row" ng-click="showListBottomSheet4($event4)">
                 <div class="col-20 icon">
                     <i class="fa fa-cog"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Perkhidmatan</p>
+                    <p class="header">Perkhidmatan</p></a>
 
                     <p class="detail">Servis yang diberikan.</p>
                 </div>
@@ -125,4 +122,131 @@
             <!--end list section-->
         </md-bottom-sheet>
     </script>
+
+    <script type="text/ng-template" id="ui-list-bottom-sheet-template1">
+        <md-bottom-sheet class="md-list md-has-header">
+            <h1 class="md-bottom-sheet-header">Orang Awam</h1>
+            <!--list section-->
+            <md-list>
+                <md-list-item>
+                    <a class="md-default-theme md-bottom-sheet-list-item"
+                       ng-click="closeListBottomSheet()">
+                        <i class="ion-android-call"></i>
+                        <span>Actions 1</span>
+                    </a>
+                </md-list-item>
+                <md-list-item>
+                    <a class="md-default-theme md-bottom-sheet-list-item"
+                       ng-click="closeListBottomSheet()">
+                        <i class="ion-android-list"></i>
+                        <span>Actions 2</span>
+                    </a>
+                </md-list-item>
+                <md-list-item>
+                    <a class="md-default-theme md-bottom-sheet-list-item"
+                       ng-click="closeListBottomSheet()">
+                        <i class="ion-android-delete"></i>
+                        <span>Actions 3</span>
+                    </a>
+                </md-list-item>
+            </md-list>
+            <!--end list section-->
+        </md-bottom-sheet>
+    </script>
+
+    <script type="text/ng-template" id="ui-list-bottom-sheet-template2">
+        <md-bottom-sheet class="md-list md-has-header">
+            <h1 class="md-bottom-sheet-header">Warga PKNS</h1>
+            <!--list section-->
+            <md-list>
+                <md-list-item>
+                    <a class="md-default-theme md-bottom-sheet-list-item"
+                       ng-click="closeListBottomSheet()">
+                        <i class="ion-android-call"></i>
+                        <span>Actions 1</span>
+                    </a>
+                </md-list-item>
+                <md-list-item>
+                    <a class="md-default-theme md-bottom-sheet-list-item"
+                       ng-click="closeListBottomSheet()">
+                        <i class="ion-android-list"></i>
+                        <span>Actions 2</span>
+                    </a>
+                </md-list-item>
+                <md-list-item>
+                    <a class="md-default-theme md-bottom-sheet-list-item"
+                       ng-click="closeListBottomSheet()">
+                        <i class="ion-android-delete"></i>
+                        <span>Actions 3</span>
+                    </a>
+                </md-list-item>
+            </md-list>
+
+            <!--end list section-->
+        </md-bottom-sheet>
+    </script>
+
+    <script type="text/ng-template" id="ui-list-bottom-sheet-template3">
+          <md-bottom-sheet class="md-list md-has-header">
+              <h1 class="md-bottom-sheet-header">Usahawan</h1>
+              <!--list section-->
+              <md-list>
+                  <md-list-item>
+                      <a class="md-default-theme md-bottom-sheet-list-item"
+                         ng-click="closeListBottomSheet()">
+                          <i class="ion-android-call"></i>
+                          <span>Actions 1</span>
+                      </a>
+                  </md-list-item>
+                  <md-list-item>
+                      <a class="md-default-theme md-bottom-sheet-list-item"
+                         ng-click="closeListBottomSheet()">
+                          <i class="ion-android-list"></i>
+                          <span>Actions 2</span>
+                      </a>
+                  </md-list-item>
+                  <md-list-item>
+                      <a class="md-default-theme md-bottom-sheet-list-item"
+                         ng-click="closeListBottomSheet()">
+                          <i class="ion-android-delete"></i>
+                          <span>Actions 3</span>
+                      </a>
+                  </md-list-item>
+              </md-list>
+              <!--end list section-->
+          </md-bottom-sheet>
+    </script>
+
+    <script type="text/ng-template" id="ui-list-bottom-sheet-template4">
+          <md-bottom-sheet class="md-list md-has-header">
+              <h1 class="md-bottom-sheet-header">Perkhidmatan</h1>
+              <!--list section-->
+              <md-list>
+                  <md-list-item>
+                      <a class="md-default-theme md-bottom-sheet-list-item"
+                         ng-click="closeListBottomSheet()">
+                          <i class="ion-android-call"></i>
+                          <span>Actions 1</span>
+                      </a>
+                  </md-list-item>
+                  <md-list-item>
+                      <a class="md-default-theme md-bottom-sheet-list-item"
+                         ng-click="closeListBottomSheet()">
+                          <i class="ion-android-list"></i>
+                          <span>Actions 2</span>
+                      </a>
+                  </md-list-item>
+                  <md-list-item>
+                      <a class="md-default-theme md-bottom-sheet-list-item"
+                         ng-click="closeListBottomSheet()">
+                          <i class="ion-android-delete"></i>
+                          <span>Actions 3</span>
+                      </a>
+                  </md-list-item>
+              </md-list>
+
+              <!--end list section-->
+          </md-bottom-sheet>
+    </script>
+
   </ion-view>

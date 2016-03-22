@@ -23,6 +23,38 @@ appControllers.controller('expenseDashboardCtrl', function ($scope, $state, $tim
         });
     };// End of showGridBottomSheet.
 
+    $scope.showListBottomSheet1 = function ($event1) {
+        $mdBottomSheet.show({
+            templateUrl: 'ui-list-bottom-sheet-template1',
+            targetEvent: $event1,
+            scope: $scope.$new(false),
+        });
+    };// End of showListBottomSheet (Orang Awam).
+
+    $scope.showListBottomSheet2 = function ($event2) {
+        $mdBottomSheet.show({
+            templateUrl: 'ui-list-bottom-sheet-template2',
+            targetEvent: $event2,
+            scope: $scope.$new(false),
+        });
+    };// End of showListBottomSheet (Warga PKNS).
+
+    $scope.showListBottomSheet3 = function ($event3) {
+        $mdBottomSheet.show({
+            templateUrl: 'ui-list-bottom-sheet-template3',
+            targetEvent: $event3,
+            scope: $scope.$new(false),
+        });
+    };// End of showListBottomSheet (Usahawan).
+
+    $scope.showListBottomSheet4 = function ($event4) {
+        $mdBottomSheet.show({
+            templateUrl: 'ui-list-bottom-sheet-template4',
+            targetEvent: $event4,
+            scope: $scope.$new(false),
+        });
+    };// End of showListBottomSheet (Perkhidmatan).
+
 });// End of controller expense dashboard.
 
 
