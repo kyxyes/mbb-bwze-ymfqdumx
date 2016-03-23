@@ -6,8 +6,8 @@
 // You can find more information at project documentation.
 
 appControllers.controller('wordpressFeedCtrl', function ($scope, $http, $state, $stateParams, $ionicHistory) {
-    
-    // This function is the first activity in the controller. 
+
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
         // $scope.feedList is the variable that store feed data from wordPress API.
@@ -28,7 +28,7 @@ appControllers.controller('wordpressFeedCtrl', function ($scope, $http, $state, 
     };// End initialForm.
 
     // getPostData is for get feed by calling to wordpress API.
-    // Parameter :  
+    // Parameter :
     // IsInit(bool) = for check that page are loading more data or refresh data.
     $scope.getPostData = function (IsInit) {
 
@@ -42,7 +42,7 @@ appControllers.controller('wordpressFeedCtrl', function ($scope, $http, $state, 
             // If it don't have data. Loading progress will stop and appear empty feed.
             if (data.length == 0) {
                 $scope.paging.shouldLoadData = true;
-            } 
+            }
 
             // If have data it will store feed data to  $scope.feedList variable to show in feed.
             else {
@@ -76,10 +76,10 @@ appControllers.controller('wordpressFeedCtrl', function ($scope, $http, $state, 
             });
     };// End getPostData.
 
-    // navigateTo is for navigate to other page 
+    // navigateTo is for navigate to other page
     // by using targetPage to be the destination page.
     // Sending objectData and wordpress url to the destination page.
-    // Parameter :  
+    // Parameter :
     // targetPage = destination page.
     // objectData = object that will sent to destination page.
     // wordpressUrl = wordpress url
@@ -90,7 +90,7 @@ appControllers.controller('wordpressFeedCtrl', function ($scope, $http, $state, 
         });
     };// End navigateTo.
 
-    // goBack is for navigate back to wordpressLogin page 
+    // goBack is for navigate back to wordpressLogin page
     $scope.goBack = function () {
         $ionicHistory.nextViewOptions({
             disableBack: true
@@ -122,7 +122,7 @@ appControllers.controller('wordpressFeedCtrl', function ($scope, $http, $state, 
 // Controller of WordPress Post Page.
 appControllers.controller('wordpressPostCtrl', function ($scope, $http, $timeout, $stateParams) {
 
-    // This function is the first activity in the controller. 
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
 
@@ -172,7 +172,7 @@ appControllers.controller('wordpressPostCtrl', function ($scope, $http, $timeout
 // Controller of WordPress Login Page.
 appControllers.controller('wordpressLoginCtrl', function ($mdToast, $scope, $state, $stateParams) {
 
-    // This function is the first activity in the controller. 
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
         // $scope.wpUrl is the variable that store wordPress url.
