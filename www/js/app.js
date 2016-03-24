@@ -15,6 +15,7 @@ window.globalVariable = {
     color: {
         appPrimaryColor: "",
         dropboxColor: "#017EE6",
+        twitterColor: "#3691F2",
         facebookColor: "#3C5C99",
         foursquareColor: "#F94777",
         googlePlusColor: "#D73D32",
@@ -203,6 +204,9 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 case "app.facebookFeed" :
                 case "app.facebookFriendList":
                     customStyle += getSocialNetworkStyle(window.globalVariable.color.facebookColor);
+                    break;
+                case "app.twitter" :
+                    customStyle += getSocialNetworkStyle(window.globalVariable.color.twitterColor);
                     break;
                 case "app.foursquareLogin" :
                 case "app.foursquareProfile":
@@ -464,7 +468,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 }
             })
 
-            .state('app.test', {
+            .state('app.twitter', {
                 url: "test",
                 views: {
                     'menuContent': {
