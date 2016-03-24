@@ -3,7 +3,7 @@
 // $ cd your_project_path
 // $ ionic plugin remove nl.x-services.plugins.socialsharing
 // $ ionic plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git
-// 
+//
 // Learn more about $cordovaSocialSharing :
 // http://ngcordova.com/docs/plugins/socialSharing/
 //
@@ -12,14 +12,14 @@
 // $ cd your_project_path
 // $ ionic plugin remove org.devgeeks.Canvas2ImagePlugin
 // $ ionic plugin add https://github.com/devgeeks/Canvas2ImagePlugin.git
-// 
+//
 // Learn more about Canvas2ImagePlugin :
 // https://github.com/devgeeks/Canvas2ImagePlugin
 //
 // Controller of product list Page.
 appControllers.controller('productListCtrl', function ($scope, $timeout, $state, $http) {
 
-    // This function is the first activity in the controller. 
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
         // $scope.productList is the variable that store user product data.
@@ -43,7 +43,7 @@ appControllers.controller('productListCtrl', function ($scope, $timeout, $state,
     // navigateTo is for navigate to other page.
     // by using targetPage to be the destination page
     // and send object to the destination page.
-    // Parameter :  
+    // Parameter :
     // targetPage = destination page.
     // objectData = object data that sent to destination page.
     $scope.navigateTo = function (targetPage, objectData) {
@@ -56,7 +56,7 @@ appControllers.controller('productListCtrl', function ($scope, $timeout, $state,
     $scope.loadMore = function () {
         $timeout(function () {
             //get product list from json  at paht: www/app-data/product-list.json
-            $http.get('app-data/product-list.json')
+            $http.get('www.pkns.gov.my/index.php/my/?option=com_jsonexport&table=desc_content')
                 .success(function (productList) {
                     // Success retrieve data.
                         // Store user data to $scope.productList.
@@ -76,7 +76,7 @@ appControllers.controller('productListCtrl', function ($scope, $timeout, $state,
 // Controller of product Detail Page.
 appControllers.controller('productDetailCtrl', function ($scope, $mdToast, $mdBottomSheet, $timeout, $stateParams) {
 
-    // This function is the first activity in the controller. 
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
         // $scope.product is product detail
@@ -130,12 +130,12 @@ appControllers.controller('productDetailCtrl', function ($scope, $mdToast, $mdBo
 // Controller of share social bottom sheet.
 appControllers.controller('sharedSocialBottomSheetCtrl', function ($scope, $mdBottomSheet, $timeout, product, $mdToast, $cordovaSocialSharing) {
 
-    // This function is the first activity in the controller. 
+    // This function is the first activity in the controller.
     // It will initial all variable data and let the function works when page load.
     $scope.initialForm = function () {
-        
+
         //$scope.setCanvasImage for set canvas image to save to your mobile gallery.
-        $scope.setCanvasImage(product.img);
+        //$scope.setCanvasImage(product.img);
         //$scope.isSaving is image saving status.
         $scope.isSaving = false;
     };// End initialForm.
@@ -266,7 +266,7 @@ appControllers.controller('productCheckoutCtrl', function ($scope, $mdToast, $md
             }
         }).then(function () {
             // For confirm button to complete order.
-            
+
             //Showing Order Completed. Thank You ! toast.
             $mdToast.show({
                 controller: 'toastController',

@@ -12,12 +12,10 @@
         <!--toolbar section-->
         <md-toolbar class="bar-subheader md-tall md-primary toolbar-medium toolbar-in-content">
             <div>
-                <h1>SALE 90% OFF</h1>
 
-                <h2>Order Now !!</h2>
 
                 <h2>
-                    <i class="fa fa-diamond"></i>
+                    Berita Dan Pengumuman
                 </h2>
             </div>
         </md-toolbar><!--end toolbar section-->
@@ -27,13 +25,10 @@
                 <!--pin section-->
                 <div class="pin" ng-if="$even" ng-repeat="product in productList"
                      ng-click="navigateTo('app.productDetail',product)">
-                    <img ng-src="{{product.img}}"/>
+                    <!--<img ng-src="{{product.img}}"/> -->
 
                     <h1>{{product.title}}</h1>
 
-                    <p>
-                        {{product.detail}}
-                    </p>
 
                     <div class="pin-footer">
                         $<span class="pin-footer text-left font-sale">{{product.price}}</span>
@@ -51,10 +46,10 @@
 
                     <h1>{{product.title}}</h1>
 
-                    <p>
+                  <!--  <p>
                         {{product.detail}}
                     </p>
-
+                  -->
                     <div class="pin-footer">
                         $<span class="pin-footer text-left font-sale">{{product.price}}</span>
                         <span class="pin-footer text-left font-hot-sale">${{product.promotionPrice}}</span>
