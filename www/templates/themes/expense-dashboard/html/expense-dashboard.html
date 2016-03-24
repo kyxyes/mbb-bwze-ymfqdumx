@@ -24,7 +24,7 @@
               <h2><b>Perbadanan Kemajuan Negeri Selangor</b></h2>
         </div>
         <a class="md-button md-accent md-fab fab-toolbar-medium"
-           ng-click="showGridBottomSheet($event)"
+           ng-click="showGridBottomSheet($event)" 
            aria-label="showListBottomSheet">
             <i class="ion-android-share-alt"></i>
         </a>
@@ -40,7 +40,7 @@
                     <i class="fa fa-users"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Orang Awam</p></a>
+                    <p class="header"  ng-click="showToast('Orang Awam')">Orang Awam</p></a>
                     <p class="detail">Orang luar yang menggunakan khidmat dan servis</p>
                 </div>
             </md-list-item>
@@ -51,7 +51,7 @@
                     <i class="fa fa-user"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Warga PKNS</p></a>
+                    <p class="header" ng-click="showToast('Warga PKNS')">Warga PKNS</p></a>
                     <p class="detail">Ahli dan Staf PKNS</p>
                 </div>
             </md-list-item>
@@ -62,7 +62,7 @@
                     <i class="fa fa-briefcase"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Usahawan</p></a>
+                    <p class="header" ng-click="showToast('Usahawan')">Usahawan</p></a>
                     <p class="detail">Pengusaha dan Pemaju</p>
                 </div>
             </md-list-item>
@@ -73,7 +73,7 @@
                     <i class="fa fa-cog"></i>
                 </div>
                 <div class="col-80 menu">
-                    <p class="header">Perkhidmatan</p></a>
+                    <p class="header" ng-click="showToast('Perkhidmatan')">Perkhidmatan</p></a>
 
                     <p class="detail">Servis yang diberikan.</p>
                 </div>
