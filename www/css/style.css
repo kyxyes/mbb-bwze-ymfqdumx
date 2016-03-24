@@ -25,12 +25,6 @@ body {
 .facebook-background {
   background-color: #3c5c99 !important; }
 
-.twitter-color {
-  color: #3691F2 !important }
-
-.twitter-background {
-  background-color: #3691F2 !important }
-
 .google-plus-color {
   color: #d73d32 !important; }
 
@@ -439,7 +433,7 @@ md-sidenav {
 #toggle-menu-left-header {
   height: 154px;
   background: url(../img/background_cover_pixels.png) repeat 0;
-  background-position: 0px;
+  background-position-x: 0px;
   color: white;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.14), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   background-repeat: repeat;
