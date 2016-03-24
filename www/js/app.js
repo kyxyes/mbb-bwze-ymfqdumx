@@ -468,7 +468,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 url: "test",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/themes/expense-dashboard/html/facebook.html",
+                        templateUrl: "templates/themes/expense-dashboard/html/twitter.html",
                     }
                 }
             })
