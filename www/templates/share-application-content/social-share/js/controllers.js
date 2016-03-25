@@ -142,6 +142,11 @@ appControllers.controller('sharedSocialBottomSheetCtrl', function ($scope, $mdBo
         $scope.isSaving = false;
     };// End initialForm.
 
+    $scope.stripHtml = function (text){
+      var noHtml = text.replace(/(<([^>]+)>)/ig,"");
+      return noHtml;
+    }
+
     //setCanvasImage for set canvas image to save to your mobile gallery.
     $scope.setCanvasImage = function (imgPath) {
         // create canvas image.
