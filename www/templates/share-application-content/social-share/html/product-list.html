@@ -5,14 +5,15 @@
 <!--State name : app.productList-->
 <!--URL : #app/productList-->
 
-<ion-view view-title="Material Shop">
+<ion-view view-title="Berita Dan Pengumuman">
     <!--product list section-->
     <ion-content id="product-list-content" class="fade-in">
 
         <!--toolbar section-->
         <md-toolbar class="bar-subheader md-tall md-primary toolbar-medium toolbar-in-content">
             <div>
-                <h2>Berita Dan Pengumuman</h2>
+                <!-- <img class="user-img" src="img/pkns.png"> -->
+                  <h2>Berita Dan Pengumuman</h2>
             </div>
         </md-toolbar><!--end toolbar section-->
 
@@ -22,15 +23,12 @@
                 <div class="pin" ng-if="$even" ng-repeat="product in productList"
                      ng-click="navigateTo('app.productDetail',product)">
                     <!--<img ng-src="{{product.img}}"/> -->
-
                     <h1>{{product.title}}</h1>
-
-
-                    <div class="pin-footer">
-                        <!-- $<span class="pin-footer text-left font-sale">{{product.price}}</span>
-                        <span class="pin-footer text-left font-hot-sale">${{product.promotionPrice}}</span> -->
-                        <span class="pin-footer text-right">Detail</span>
-                    </div>
+                  <div class="pin-footer">
+                      <!-- $<span class="pin-footer text-left font-sale">{{product.price}}</span>
+                      <span class="pin-footer text-left font-hot-sale">${{product.promotionPrice}}</span> -->
+                      <span class="pin-footer text-right">Detail</span>
+                  </div>
                 </div>  <!--end pin section-->
             </div>
 
@@ -38,17 +36,10 @@
                 <!--pin section-->
                 <div class="pin" ng-if="$odd" ng-repeat="product in productList"
                      ng-click="navigateTo('app.productDetail',product)">
-                    <img ng-src="{{product.img}}"/>
-
-                    <h1>{{product.title}}</h1>
-
-                  <!--  <p>
-                        {{product.detail}}
-                    </p>
-                  -->
+                    <!-- <img ng-src="{{product.img}}"/> -->
+                      <h1>{{product.title}}</h1>
                     <div class="pin-footer">
-                        <!-- $<span class="pin-footer text-left font-sale">{{product.price}}</span>
-                        <span class="pin-footer text-left font-hot-sale">${{product.promotionPrice}}</span> -->
+                        <!-- <span class="pin-footer text-left font-hot-sale">{{product.promotionPrice}}</span> -->
                         <span class="pin-footer text-right">Detail</span>
                     </div>
                 </div>  <!--end pin section-->
@@ -57,21 +48,13 @@
 
         <ion-infinite-scroll on-infinite="loadMore()" distance="1%">
         </ion-infinite-scroll>
-    </ion-content><!--end product list section-->
-
-    <!--button section-->
-    <!-- <div class="footer-fab-bar">
-        <a class="md-button md-accent md-fab fab-footer" ng-click="navigateTo('app.productCheckout')" aria-label="Add">
-            <i class="fa fa-shopping-cart"></i>
-        </a>
-    </div> -->
-    <!--end button section-->
+    </ion-content>
+    <!--end product list section-->
 
     <!--loading progress-->
     <div id="product-list-loading-progress" class="loading-progress fade-in">
         <ion-spinner ng-if="!isAndroid" class="progress-circular"></ion-spinner>
         <md-progress-circular ng-if="isAndroid" md-mode="indeterminate"></md-progress-circular>
-    </div><!--end loading progress-->
-
-
+    </div>
+    <!--end loading progress-->
 </ion-view>
