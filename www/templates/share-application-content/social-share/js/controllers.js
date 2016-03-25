@@ -56,7 +56,9 @@ appControllers.controller('productListCtrl', function ($scope, $timeout, $state,
     $scope.loadMore = function () {
         $timeout(function () {
             //get product list from json  at paht: www/app-data/product-list.json
-            $http.get('www.pkns.gov.my/index.php/my/?option=com_jsonexport&table=desc_content')
+            //url for json  http://www.pkns.gov.my/json/desc_content.json
+
+            $http.get('http://www.pkns.gov.my/index.php/my/?option=com_jsonexport&table=desc_content')
                 .success(function (productList) {
                     // Success retrieve data.
                         // Store user data to $scope.productList.
