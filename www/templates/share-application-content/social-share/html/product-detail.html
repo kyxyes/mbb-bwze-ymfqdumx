@@ -11,23 +11,23 @@
         <a ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item nav-back-btn">
             <i class="ion-android-arrow-back"></i>
         </a>
-    </ion-nav-buttons> <!--end left button on navigation bar-->
+    </ion-nav-buttons> <!--end left button on navigation bar> -->
 
     <!--product detail section-->
     <ion-content id="product-detail-content" class="fade-in">
-        <md-content>
+        <md-content md-border-bottom md-selected="0" id="product-detail-tab-detail" class="no-border">
             <!--product tabs section-->
-            <md-tabs md-border-bottom md-selected="0" id="product-detail-tabs" class="no-border">
+            <!-- <md-tabs md-border-bottom md-selected="0" id="product-detail-tabs" class="no-border"> -->
                 <!--product tab detail section-->
-                <md-tab label="Detail">
-                    <md-content id="product-detail-tab-detail">
-                        <div class="toolbar-image-cover product" style="background-image: url('{{product.img}}');">
-                        </div>
-                        <a class="md-button md-accent md-fab fab-toolbar-medium"
+                <!-- <md-tab label="Detail"> -->
+                    <!-- <md-content > -->
+                        <!-- <div class="toolbar-image-cover product" style="background-image: url('{{product.img}}');">
+                        </div> -->
+                        <!-- <a class="md-button md-accent md-fab fab-toolbar-medium"
                            ng-click="sharedProduct($event,product)"
                            aria-label="showListBottomSheet">
                             <i class="ion-android-share-alt"></i>
-                        </a>
+                        </a> -->
 
                         <div class="detail-form">
                             <div class="header">
@@ -36,21 +36,20 @@
                                 <p>{{product.introtext}}</p>
                             </div>
                             <!--product tab detail price section-->
-                            <div class="product-detail-price">
+                            <!-- <div class="product-detail-price">
                                 <div class="left">
                                     $<span class="font-sale">{{product.price | number : 2}}</span>
                                     <br/><span
                                         class="font-hot-sale"> ${{product.promotionPrice | number : 2}} </span>
-                                </div>
-                                <div class="right">
+                                </div> -->
+                                <!-- <div class="right">
                                     <a class="md-raised md-warn md-button md-default-theme" ng-click="addToCart()">
                                         ADD TO CART
                                     </a>
-                                </div>
-                            </div><!--end product tab detail price section-->
-
+                                </div> -->
+                            <!-- </div> --><!--end product tab detail price section-->
                             <!--product tab detail review section-->
-                            <div class="product-detail-review">
+                            <!-- <div class="product-detail-review">
                                 <p>Best Seller :
                                     <span>
                                         <i class="fa fa-star"></i>
@@ -60,10 +59,10 @@
                                         <i class="fa fa-star"></i>
                                     </span>
                                 </p>
-                            </div><!--end product tab detail review section-->
+                            </div> --> <!--end product tab detail review section-->
 
                             <!--product tab detail shipping section-->
-                            <div class="product-detail-shipping row">
+                            <!-- <div class="product-detail-shipping row">
                                 <div class="col-67">
                                     <p>Item : MT098541A</p>
 
@@ -79,27 +78,27 @@
 
                                     <p><i class="fa fa-cube"></i></p>
                                 </div>
-                            </div><!--end product tab detail shipping section-->
+                            </div> --><!--end product tab detail shipping section-->
                             <!--product tab detail note section-->
-                            <div class="product-detail-note">
+                            <!-- <div class="product-detail-note">
 
                                 <p>Sharing this get discount on top 20%</p>
-                            </div> <!--end product tab detail note section-->
-                        </div>
-                    </md-content>
-                </md-tab><!--end product tab detail section-->
+                            </div> --> <!--end product tab detail note section-->
+                        <!-- </div> -->
+                    <!-- </md-content> -->
+                <!-- </md-tab> --><!--end product tab detail section-->
 
                 <!--product tab product section-->
-                <md-tab label="Product">
+                <!-- <md-tab label="Product">
                     <md-content class="md-padding">
                         <div id="product-detail-tab-product">
                             <div>
                                 <h1>{{product.title}}</h1>
 
                                 <p>{{product.fullDetail}}</p>
-                            </div>
+                            </div> -->
                             <!--pin section-->
-                            <div class="pin">
+                            <!-- <div class="pin">
                                 <img ng-src="{{product.img}}"/>
 
                                 <p>
@@ -114,30 +113,30 @@
                                    ng-click="addToCart()">
                                     ADD TO CART
                                 </a>
-                            </div>  <!--end pin section-->
+                            </div> -->  <!--end pin section-->
 
-                        </div>
+                        <!-- </div>
                     </md-content>
-                </md-tab> <!--product tab product section-->
-            </md-tabs><!--end product tabs section-->
+                </md-tab> --> <!--product tab product section-->
+            <!-- </md-tabs> --><!--end product tabs section-->
         </md-content>
     </ion-content>
     <!--end product detail section-->
 
     <!--loading progress-->
-    <div id="product-detail-loading-progress" class="loading-progress fade-in">
+    <!-- <div id="product-detail-loading-progress" class="loading-progress fade-in">
         <ion-spinner ng-if="!isAndroid" class="progress-circular"></ion-spinner>
         <md-progress-circular ng-if="isAndroid" md-mode="indeterminate"></md-progress-circular>
-    </div> <!--end loading progress-->
+    </div> --> <!--end loading progress-->
 
     <!--canvas for save image to local devise-->
-    <canvas id="imgCanvas" class="display-none"></canvas>
+    <canvas id="imgCanvas" class="display-none">test</canvas>
 
     <!--angular template section-->
-    <script type="text/ng-template" id="bottom-sheet-shared.html">
-        <md-bottom-sheet class="md-grid">
+    <!-- <script type="text/ng-template" id="bottom-sheet-shared.html">
+        <md-bottom-sheet class="md-grid"> -->
             <!--list section-->
-            <md-list id="bottom-sheet-grid-md-list">
+            <!-- <md-list id="bottom-sheet-grid-md-list">
                 <md-list-item>
                     <a class="md-grid-item-content" ng-click="sharedFacebook()">
                         <md-icon md-svg-src="facebook"></md-icon>
@@ -169,8 +168,8 @@
                         <div class="md-grid-text"> More</div>
                     </a>
                 </md-list-item>
-            </md-list> <!--end list section-->
-        </md-bottom-sheet>
-    </script>
+            </md-list> --> <!--end list section-->
+        <!-- </md-bottom-sheet>
+    </script> -->
     <!--end angular template section-->
 </ion-view>
