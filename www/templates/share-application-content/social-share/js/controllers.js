@@ -84,6 +84,8 @@ appControllers.controller('productDetailCtrl', function ($scope, $mdToast, $mdBo
         // $scope.product is product detail
         // $stateParams.product is the object that pass from product list page.
         $scope.product = $stateParams.product;
+        console.log($stateParams.product['introtext']);
+        $scope.ProductList=$stateParams.product['introtext'];
         // Loading progress.
         $timeout(function () {
             if ($scope.isAndroid) {
