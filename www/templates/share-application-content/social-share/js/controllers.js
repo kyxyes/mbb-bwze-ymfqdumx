@@ -85,8 +85,15 @@ appControllers.controller('productDetailCtrl', function ($scope, $mdToast, $mdBo
         // $stateParams.product is the object that pass from product list page.
         $scope.product = $stateParams.product;
 
-        //console.log($stateParams.product['introtext']);
-        $scope.ProductList=$stateParams.product['introtext'];
+        var content = $stateParams.product['introtext'];
+        content=content.replace(/height=\"[0-9]*"/i,"");
+        content=content.replace(/width=\"[0-9]*\"/i,"");
+        content = content.replace('src="images/','width="100%" src="http://www.pkns.gov.my/images/');
+
+          console.log(content);
+
+        $scope.ProductList = content;
+          //console.log($scope.Productlist);
 
         // Loading progress.
         $timeout(function () {
@@ -146,10 +153,7 @@ appControllers.controller('sharedSocialBottomSheetCtrl', function ($scope, $mdBo
         $scope.isSaving = false;
     };// End initialForm.
 
-    $scope.stripHtml = function (text){
-      var noHtml = text.replace(/(<([^>]+)>)/ig,"");
-      return noHtml;
-    }
+
 
     //setCanvasImage for set canvas image to save to your mobile gallery.
     $scope.setCanvasImage = function (imgPath) {
