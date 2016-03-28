@@ -22,11 +22,8 @@
                 <!--pin section-->
                 <div class="pin" ng-if="$even" ng-repeat="product in productList"
                      ng-click="navigateTo('app.productDetail',product)">
-                    <!--<img ng-src="{{product.img}}"/> -->
                     <h1>{{product.title}}</h1>
                   <div class="pin-footer">
-                      <!-- $<span class="pin-footer text-left font-sale">{{product.price}}</span>
-                      <span class="pin-footer text-left font-hot-sale">${{product.promotionPrice}}</span> -->
                       <span class="pin-footer text-right">Detail</span>
                   </div>
                 </div>  <!--end pin section-->
@@ -36,10 +33,8 @@
                 <!--pin section-->
                 <div class="pin" ng-if="$odd" ng-repeat="product in productList"
                      ng-click="navigateTo('app.productDetail',product)">
-                    <!-- <img ng-src="{{product.img}}"/> -->
                       <h1>{{product.title}}</h1>
                     <div class="pin-footer">
-                        <!-- <span class="pin-footer text-left font-hot-sale">{{product.promotionPrice}}</span> -->
                         <span class="pin-footer text-right">Detail</span>
                     </div>
                 </div>  <!--end pin section-->
