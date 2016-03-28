@@ -85,7 +85,7 @@ appControllers.controller('productDetailCtrl', function ($scope, $mdToast, $mdBo
         // $stateParams.product is the object that pass from product list page.
         $scope.product = $stateParams.product;
 
-        console.log($stateParams.product['introtext']);
+        //console.log($stateParams.product['introtext']);
         $scope.ProductList=$stateParams.product['introtext'];
 
         // Loading progress.
