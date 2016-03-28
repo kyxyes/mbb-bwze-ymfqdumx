@@ -90,7 +90,7 @@ appControllers.controller('productDetailCtrl', function ($scope, $mdToast, $mdBo
         content=content.replace(/width=\"[0-9]*\"/i,"");
         content = content.replace('src="images/','width="100%" src="http://www.pkns.gov.my/images/');
 
-          console.log(content);
+          //console.log(content);
 
         $scope.ProductList = content;
           //console.log($scope.Productlist);
