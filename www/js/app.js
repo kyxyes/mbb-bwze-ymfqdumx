@@ -540,11 +540,11 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 }
             })
 
-            .state('app.peluangPekerjaan', {
+            .state('app.peluangPerniagaan', {
                 url: "peluangPekerjaan",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/themes/expense-dashboard/html/PeluangPekerjaan.html",
+                        templateUrl: "templates/themes/expense-dashboard/html/PeluangPerniagaan.html",
                     }
                 }
             })
