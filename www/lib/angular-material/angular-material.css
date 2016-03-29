@@ -2870,7 +2870,7 @@ md-bottom-sheet {
   transition-property: -webkit-transform;
   transition-property: transform; }
   md-bottom-sheet.md-has-header {
-    padding-top: 0; }
+    padding-top: 15px; }
   md-bottom-sheet.ng-enter {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
