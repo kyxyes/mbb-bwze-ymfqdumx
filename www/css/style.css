@@ -210,6 +210,10 @@ md-sidenav {
   background-image: url("../img/pknsBG2.png") !important;
   background-position: center !important; }
 
+.material-background-nav-bar {
+  background-color: #f44336 !important;
+  border-style: none; }
+
 .pin {
   display: inline-block;
   background: #fefefe;

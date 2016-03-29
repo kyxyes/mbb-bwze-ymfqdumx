@@ -3011,14 +3011,6 @@ time, mark, audio, video {
   font: inherit;
   font-size: 100%; }
 
-  .sub-menu-header {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    font: inherit;
-    font-size: 20px; }
-
 ol, ul {
   list-style: none; }
 
@@ -3563,9 +3555,7 @@ ion-infinite-scroll {
  * --------------------------------------------------
  */
 p {
-  /*margin: 0 0 10px;*/
-  font-weight: normal;
- }
+  margin: 0 0 10px; }
 
 small {
   font-size: 85%; }
