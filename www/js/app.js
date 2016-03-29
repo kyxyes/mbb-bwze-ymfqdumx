@@ -98,7 +98,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 ".material-background-nav-bar { " +
                 "   background-color        : " + appPrimaryColor + " !important;" +
                 "   border-style            : none;" +
-                "   background-image        : url('img/background_cover_pixels.png') !important;" +
+                // "   background-image        : url('img/background_cover_pixels.png') !important;" +
                 "   background-size         : initial !important;" +
                 "}" +
                 ".md-primary-color {" +
