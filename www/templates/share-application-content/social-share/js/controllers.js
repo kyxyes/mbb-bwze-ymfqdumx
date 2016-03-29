@@ -34,6 +34,24 @@ appControllers.controller('productListCtrl', function ($scope, $timeout, $state,
                 jQuery('#product-list-loading-progress').fadeIn(700);
             }
         }, 400);
+
+        $timeout(function () {
+            //get product list from json  at paht: www/app-data/product-list.json
+            //url for json  http://www.pkns.gov.my/json/desc_content.json
+
+            $http.get('http://www.pkns.gov.my/index.php/my/?option=com_jsonexport&table=desc_content')
+                .success(function (productList) {
+                    // Success retrieve data.
+                        // Store user data to $scope.productList.
+                    for (var product = 0; product < productList.length; product++) {
+                        $scope.productList.push(productList[product]);
+                    }
+                    // To stop loading progress.
+                    $scope.$broadcast('scroll.infiniteScrollComplete');
+                });
+        }, 2000);
+
+
         $timeout(function () {
             jQuery('#product-list-loading-progress').hide();
             jQuery('#product-list-content').fadeIn();
