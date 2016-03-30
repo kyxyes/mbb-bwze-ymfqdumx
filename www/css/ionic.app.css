@@ -3011,6 +3011,11 @@ time, mark, audio, video {
   font: inherit;
   font-size: 100%; }
 
+  .sub-menu-header{
+    font-weight: bold;
+    font-size: 20px;
+  }
+
 ol, ul {
   list-style: none; }
 
@@ -3096,9 +3101,11 @@ a {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-b,
+/*b,
 strong {
-  font-weight: bold; }
+  font-weight: bold; }*/
+
+
 
 /**
  * Address styling not present in Safari 5 and Chrome.
