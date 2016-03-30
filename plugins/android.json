@@ -7,64 +7,9 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-googleplayservices": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-contacts": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-camera": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-vibration": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-transport-security": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "org.devgeeks.Canvas2ImagePlugin": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-image-picker": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-x-socialsharing": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-sqlite-storage": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-flashlight": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
         "com.cordova.plugins.sms": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "de.appplant.cordova.plugin.local-notification": {
             "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-app-event": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        }
-    }
+    "dependent_plugins": {}
 }
