@@ -83,7 +83,7 @@
 
             <md-list-item class="row" ng-click="navigateTo('app.contractUs')">
                 <div class="col-20 icon">
-                    <i class="fa fa-cog"></i>
+                    <i class="fa fa-phone"></i>
                 </div>
                 <div class="col-80 menu">
                     <p class="header">Hubungi Kami</p>
@@ -143,28 +143,33 @@
                <hr/>
                <!--list section-->
                <md-list>
-                   <md-list-item>
-                       <a class="md-default-theme md-bottom-sheet-list-item"
-                          ng-click="navigateTo('app.pknsProperty')">
+                <md-list-item class="row menu-item" ng-click="navigateTo('app.pknsProperty')">
+                    <div class="col-33">
                            <i class="fa fa-bank"></i>
+                    </div>
+                    <div class="col-66">
                            <span>Portal Hartanah PKNS</span>
-                       </a>
-                   </md-list-item>
-                   <md-list-item>
-                       <a class="md-default-theme md-bottom-sheet-list-item"
-                          ng-click="navigateTo('app.pknsCareline')">
-                           <i class="fa fa-phone"></i>
-                           <span>PKNS Careline</span>
-                       </a>
-                   </md-list-item>
-                   <md-list-item>
-                       <a class="md-default-theme md-bottom-sheet-list-item"
-                          ng-click="navigateTo('app.direktori')">
-                           <i class="fa fa-map-signs"></i>
-                           <span>Direktori</span>
-                       </a>
-                   </md-list-item>
-               </md-list>
+                    </div>
+               </md-list-item>
+
+               <md-list-item class="row menu-item" ng-click="navigateTo('app.pknsCareline')">
+                     <div class="col-33">
+                            <i class="fa fa-phone"></i>
+                     </div>
+                     <div class="col-66">
+                            <span>PKNS Careline</span>
+                     </div>
+               </md-list-item>
+
+               <md-list-item class="row menu-item" ng-click="navigateTo('app.direktori')">
+                     <div class="col-33">
+                            <i class="fa fa-map-signs"></i>
+                     </div>
+                     <div class="col-66">
+                            <span>Direktori</span>
+                     </div>
+               </md-list-item>
+             </md-list>
                <!--end list section-->
            </md-bottom-sheet>
        </script>
@@ -176,14 +181,15 @@
                <hr/>
                <!--list section-->
                <md-list>
-                   <md-list-item>
-                       <a class="md-default-theme md-bottom-sheet-list-item"
-                          ng-click="navigateTo('app.sistemDalamanPKNS')">
-                           <i class="fa fa-archive"></i>
-                           <span>Sistem dalaman PKNS</span>
-                       </a>
-                   </md-list-item>
-               </md-list>
+                 <md-list-item class="row menu-item" ng-click="navigateTo('app.sistemDalamanPKNS')">
+                   <div class="col-33">
+                          <i class="fa fa-archive"></i>
+                        </div>
+                        <div class="col-66">
+                          <span>Sistem dalaman PKNS</span>
+                        </div>
+                </md-list-item>
+              </md-list>
                <!--end list section-->
            </md-bottom-sheet>
        </script>
@@ -195,33 +201,40 @@
                  <hr/>
                  <!--list section-->
                  <md-list>
-                     <md-list-item>
-                         <a class="md-default-theme md-bottom-sheet-list-item"
-                            ng-click="navigateTo('app.programKeusahawanan')">
+                     <md-list-item class="row menu-item" ng-click="navigateTo('app.programKeusahawanan')">
+                      <div class="col-33">
                              <i class="fa fa-tasks"></i>
+                      </div>
+                      <div class="col-66">
                              <span>Program Keusahawanan</span>
-                         </a>
+                      </div>
                      </md-list-item>
-                     <md-list-item>
-                         <a class="md-default-theme md-bottom-sheet-list-item"
-                            ng-click="navigateTo('app.akademiPKNS')">
-                             <i class="fa fa-mortar-board"></i>
-                             <span>Akademi PKNS</span>
-                         </a>
+
+                     <md-list-item class="row menu-item" ng-click="navigateTo('app.akademiPKNS')">
+                       <div class="col-33">
+                              <i class="fa fa-mortar-board"></i>
+                       </div>
+                       <div class="col-66">
+                              <span>Akademi PKNS</span>
+                       </div>
                      </md-list-item>
-                     <md-list-item>
-                         <a class="md-default-theme md-bottom-sheet-list-item"
-                            ng-click="navigateTo('app.pejabatMaya')">
-                             <i class="fa fa-cloud"></i>
-                             <span>Pejabat Maya</span>
-                         </a>
+
+                     <md-list-item class="row menu-item" ng-click="navigateTo('app.pejabatMaya')">
+                       <div class="col-33">
+                              <i class="fa fa-cloud"></i>
+                       </div>
+                       <div class="col-66">
+                              <span>Pejabat Maya</span>
+                       </div>
                      </md-list-item>
-                     <md-list-item>
-                         <a class="md-default-theme md-bottom-sheet-list-item"
-                            ng-click="navigateTo('app.peluangPerniagaan')">
-                             <i class="fa fa-briefcase"></i>
-                             <span>Peluang Perniagaan</span>
-                         </a>
+
+                     <md-list-item class="row menu-item" ng-click="navigateTo('app.peluangPerniagaan')">
+                       <div class="col-33">
+                              <i class="fa fa-briefcase"></i>
+                       </div>
+                       <div class="col-66">
+                              <span>Peluang Perniagaan</span>
+                       </div>
                      </md-list-item>
                  </md-list>
                  <!--end list section-->
@@ -235,28 +248,33 @@
                  <hr/>
                  <!--list section-->
                  <md-list>
-                     <md-list-item>
-                         <a class="md-default-theme md-bottom-sheet-list-item"
-                            ng-click="navigateTo('app.sebutHarga')">
+                  <md-list-item class="row menu-item" ng-click="navigateTo('app.sebutHarga')">
+                      <div class="col-33">
                              <i class="fa fa-newspaper-o"></i>
+                      </div>
+                      <div class="col-66">
                              <span>Notis Sebut Harga & Tender</span>
-                         </a>
-                     </md-list-item>
-                     <md-list-item>
-                         <a class="md-default-theme md-bottom-sheet-list-item"
-                            ng-click="navigateTo('app.pembayaranOnline')">
-                             <i class="fa fa-credit-card"></i>
-                             <span>Sistem Pembayaran Online</span>
-                         </a>
-                     </md-list-item>
-                     <md-list-item>
-                         <a class="md-default-theme md-bottom-sheet-list-item"
-                            ng-click="navigateTo('app.pembayaranOnlinePOS')">
-                             <i class="fa fa-money"></i>
-                             <span>Pembayaran Online POS Malaysia</span>
-                         </a>
-                     </md-list-item>
-                 </md-list>
+                      </div>
+                 </md-list-item>
+
+                 <md-list-item class="row menu-item" ng-click="navigateTo('app.pembayaranOnline')">
+                       <div class="col-33">
+                              <i class="fa fa-credit-card"></i>
+                       </div>
+                       <div class="col-66">
+                              <span>Sistem Pembayaran Online</span>
+                       </div>
+                 </md-list-item>
+
+                 <md-list-item class="row menu-item" ng-click="navigateTo('app.pembayaranOnlinePOS')">
+                       <div class="col-33">
+                              <i class="fa fa-money"></i>
+                       </div>
+                       <div class="col-66">
+                              <span>Pembayaran Online POS</span>
+                       </div>
+                 </md-list-item>
+               </md-list>
                  <!--end list section-->
              </md-bottom-sheet>
        </script>
