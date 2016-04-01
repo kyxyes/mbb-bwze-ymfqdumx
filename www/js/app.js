@@ -928,6 +928,46 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                     }
                 }
             })
+            .state('app.statistic', {
+                url: "/statistic",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/statistic.html"
+                    }
+                }
+            })
+            .state('app.tender', {
+                url: "/tender",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/tender.html"
+                    }
+                }
+            })
+            .state('app.webmel', {
+                url: "/webmel",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/webmel.html"
+                    }
+                }
+            })
+            .state('app.maklumbalas', {
+                url: "/maklumbalas",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/maklumbalas.html"
+                    }
+                }
+            })
+            .state('app.galeri', {
+                url: "/galeri",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/galeri.html"
+                    }
+                }
+            })
             .state('app.expense', {
                 url: "/expense",
                 params:{
