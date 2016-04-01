@@ -920,6 +920,14 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                     }
                 }
             })
+            .state('app.menuDashboard1', {
+                url: "/menuDashboard1",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/menu-dashboard1.html"
+                    }
+                }
+            })
             .state('app.expense', {
                 url: "/expense",
                 params:{
