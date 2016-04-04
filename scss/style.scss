@@ -46,7 +46,7 @@ $font_arial: Arial;
 
 //urls variable section
 $url_background_cover_pixels: url(../img/background_cover_pixels.png);
-$url_background_cover_contract_us: url(../img/contract_us_bg.jpg);
+$url_background_cover_contract_us: url(../img/contract_us_bg.png);
 $url_background_cover_try_app_01: url(../img/slide_01.png);
 $url_background_cover_try_app_02: url(../img/slide_02.png);
 $url_background_cover_try_app_03: url(../img/slide_03.png);
@@ -485,6 +485,7 @@ md-sidenav {
   }
 }
 
+//hubungi kami ui
 .toolbar-with-image {
   max-height: 210px !important;
   height: 210px !important;
@@ -499,12 +500,12 @@ md-sidenav {
   }
 
   h1 {
-    color: $color_white;
+    color: #f44336;
     font-size: 34px;
   }
 
   h2 {
-    color: $color_white;
+    color: #f44336;
     font-size: 18px;
   }
 
@@ -557,8 +558,8 @@ md-sidenav {
   }
   img.user-img {
     border-radius: 50%;
-    width: 140px;
-    height: 140px;
+    width: 100%;
+    height: 100%;
     margin-top: 16px;
 
   }

@@ -296,17 +296,17 @@ md-sidenav {
   max-height: 210px !important;
   height: 210px !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  background-image: url(../img/contract_us_bg.jpg);
+  background-image: url(../img/contract_us_bg.png);
   background-size: cover; }
   .toolbar-with-image div {
     padding: 70px 10px 10px 10px;
     text-align: center;
     height: inherit !important; }
   .toolbar-with-image h1 {
-    color: white;
+    color: #f44336;
     font-size: 34px; }
   .toolbar-with-image h2 {
-    color: white;
+    color: #f44336;
     font-size: 18px; }
   .toolbar-with-image h3 {
     color: white;
@@ -341,8 +341,8 @@ md-sidenav {
     background-position-y: -60px; }
   .toolbar-image-cover img.user-img {
     border-radius: 50%;
-    width: 140px;
-    height: 140px;
+    width: 100%;
+    height: 100%;
     margin-top: 16px; }
 
 .md-button.md-accent.md-fab.fab-toolbar-medium {

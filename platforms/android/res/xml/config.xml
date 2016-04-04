@@ -1,8 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionicframework.ionicmaterialdesign506749" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.aidantech.pkns" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Sms">
         <param name="android-package" value="com.cordova.plugins.sms.Sms" />
+    </feature>
+    <name>IonicMaterialDesign</name>
+    <description>
+        An Ionic Framework and Cordova project.
+    </description>
+    <feature name="EmailComposer">
+        <param name="android-package" value="com.jcjee.plugins.EmailComposer" />
     </feature>
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
@@ -16,12 +23,17 @@
     <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
     <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
     <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
-    <name>IonicMaterialDesign</name>
+    <name>PKNS</name>
     <description>
-        An Ionic Framework and Cordova project.
+        Perbadanan Kemajuan Negeri Selangor ( PKNS ) telah ditubuhkan pada 1 Ogos 1964
+        di bawah Enakmen Perbadanan Kemajuan Negeri Selangor ( 1964 ) sebagai sebuah
+        badan berkanun dan agensi pembangunan negeri Selangor. Penubuhannya bertujuan
+        untuk mengisi kemerdekaan Negara menerusi pengagihan ekonimi yang adil dan
+        pertumbuhan sosio-ekonomi yang berpandukan kepada dasar-dasar kerajaan agar dpt
+        mewujudkan kestabilan, keharmonian dan keadilan sosial khususnya di Selangor.
     </description>
-    <author email="ionicmaterialdesign@gmail.com" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="general@pkns.gov.my" href="http://ionicframework.com/">
+      general@pkns.gov.my
     </author>
     <content src="index.html" />
     <access origin="*" />
