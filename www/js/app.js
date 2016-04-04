@@ -928,6 +928,14 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                     }
                 }
             })
+            .state('app.menuDashboard2', {
+                url: "/menuDashboard1",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/menu-dashboard2.html"
+                    }
+                }
+            })
             //pautan agensi page link
             .state('app.KerajaanMalaysia', {
                 url: "/kerajaanmalaysia",
@@ -1083,7 +1091,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
             })
             // end of pautan agensi page link
 
-
+            // pautan pantas page link
             .state('app.statistic', {
                 url: "/statistic",
                 views: {
@@ -1124,6 +1132,92 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                     }
                 }
             })
+            // end of pautan pantas page link
+
+            //begin of syarikat anak pkns page link
+            .state('app.pknsEngi', {
+                url: "/pknsengi",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/Syarikat-Anak-PKNS/pknsEngineering.html"
+                    }
+                }
+            })
+            .state('app.SIC', {
+                url: "/sic",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/Syarikat-Anak-PKNS/sic.html"
+                    }
+                }
+            })
+            .state('app.Selaman', {
+                url: "/sic",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/Syarikat-Anak-PKNS/selaman.html"
+                    }
+                }
+            })
+            .state('app.pknsInfra', {
+                url: "/pknsinfra",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/Syarikat-Anak-PKNS/pknsInfra.html"
+                    }
+                }
+            })
+            .state('app.DePalma', {
+                url: "/depalma",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/Syarikat-Anak-PKNS/depalma.html"
+                    }
+                }
+            })
+            .state('app.WorldWide', {
+                url: "/worldwide",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/Syarikat-Anak-PKNS/worldwide.html"
+                    }
+                }
+            })
+            .state('app.SACC', {
+                url: "/sacc",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/Syarikat-Anak-PKNS/sacc.html"
+                    }
+                }
+            })
+            .state('app.pknsHolding', {
+                url: "/pknsholding",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/Syarikat-Anak-PKNS/pknsHolding.html"
+                    }
+                }
+            })
+            .state('app.DatumCorp', {
+                url: "/datumCorp",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/Syarikat-Anak-PKNS/datumCorp.html"
+                    }
+                }
+            })
+            .state('app.pknsRE', {
+                url: "/pknsre",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/Syarikat-Anak-PKNS/pknsRE.html"
+                    }
+                }
+            })
+
+            //end of syrikat anak pkns page link
+
             .state('app.expense', {
                 url: "/expense",
                 params:{
