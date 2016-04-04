@@ -928,11 +928,167 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                     }
                 }
             })
+            //pautan agensi page link
+            .state('app.KerajaanMalaysia', {
+                url: "/kerajaanmalaysia",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/kerajaanMalaysia.html"
+                    }
+                }
+            })
+            .state('app.JAIS', {
+                url: "/JAIS",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/jais.html"
+                    }
+                }
+            })
+            .state('app.LZS', {
+                url: "/lzs",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/lzs.html"
+                    }
+                }
+            })
+            .state('app.MSC', {
+                url: "/msc",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/msc.html"
+                    }
+                }
+            })
+            .state('app.MSSAAS', {
+                url: "/mssaas",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/mssaas.html"
+                    }
+                }
+            })
+            .state('app.Unisel', {
+                url: "/unisel",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/unisel.html"
+                    }
+                }
+            })
+            .state('app.JPBD', {
+                url: "/jpbd",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/jpbd.html"
+                    }
+                }
+            })
+            .state('app.KUIS', {
+                url: "/kuis",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/kuis.html"
+                    }
+                }
+            })
+            .state('app.JKM', {
+                url: "/jkm",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/jkm.html"
+                    }
+                }
+            })
+            .state('app.EPSA', {
+                url: "/epsa",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/epsa.html"
+                    }
+                }
+            })
+            .state('app.MyID', {
+                url: "/myID",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/myID.html"
+                    }
+                }
+            })
+            .state('app.PNS', {
+                url: "/pns",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/pns.html"
+                    }
+                }
+            })
+            .state('app.PTGS', {
+                url: "/ptgs",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/ptgs.html"
+                    }
+                }
+            })
+            .state('app.LPHS', {
+                url: "/lphs",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/lphs.html"
+                    }
+                }
+            })
+            .state('app.IIM', {
+                url: "/iim",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/iim.html"
+                    }
+                }
+            })
+            .state('app.PADAT', {
+                url: "/padat",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/padat.html"
+                    }
+                }
+            })
+            .state('app.JAS', {
+                url: "/jas",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/JAS.html"
+                    }
+                }
+            })
+            .state('app.SIRIM', {
+                url: "/sirim",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/sirim.html"
+                    }
+                }
+            })
+            .state('app.MYGOV', {
+                url: "/myGov",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/mygov.html"
+                    }
+                }
+            })
+            // end of pautan agensi page link
+
+
             .state('app.statistic', {
                 url: "/statistic",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/themes/menu-dashboard/html/statistic.html"
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-pantas/statistic.html"
                     }
                 }
             })
@@ -940,7 +1096,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 url: "/tender",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/themes/menu-dashboard/html/tender.html"
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-pantas/tender.html"
                     }
                 }
             })
@@ -948,7 +1104,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 url: "/webmel",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/themes/menu-dashboard/html/webmel.html"
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-pantas/webmel.html"
                     }
                 }
             })
@@ -956,7 +1112,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 url: "/maklumbalas",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/themes/menu-dashboard/html/maklumbalas.html"
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-pantas/maklumbalas.html"
                     }
                 }
             })
@@ -964,7 +1120,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 url: "/galeri",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/themes/menu-dashboard/html/galeri.html"
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-pantas/galeri.html"
                     }
                 }
             })
