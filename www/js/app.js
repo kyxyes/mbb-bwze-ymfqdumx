@@ -941,7 +941,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 url: "/kerajaanmalaysia",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/KerajaanMalaysia.html"
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/kerajaanMalaysia.html"
                     }
                 }
             })
@@ -1215,7 +1215,6 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                     }
                 }
             })
-
             //end of syrikat anak pkns page link
 
             .state('app.expense', {
