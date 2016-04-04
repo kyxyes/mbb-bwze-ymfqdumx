@@ -941,7 +941,7 @@ angular.module('starter', ['ionic','ngIOS9UIWebViewPatch', 'starter.controllers'
                 url: "/kerajaanmalaysia",
                 views: {
                     'menuContent': {
-                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/kerajaanMalaysia.html"
+                        templateUrl: "templates/themes/menu-dashboard/html/pautan-agensi/KerajaanMalaysia.html"
                     }
                 }
             })
