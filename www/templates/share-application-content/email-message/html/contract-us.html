@@ -38,7 +38,7 @@
             <div class="col-75">
               Email
               <br/>
-              <a href="mailto:aduan@pkns.gov.my?Subject=Hello%20again" target="_top">{{contractInfo.email}}</a>
+              {{contractInfo.email}}
             </div>
             <div class="col-25">
                 <i class="ion-android-mail" ng-click="sentEmail(contractInfo.email)"></i>
@@ -52,7 +52,11 @@
                 {{contractInfo.telephone}}
             </div>
             <div class="col-25">
+<<<<<<< HEAD
+                <i class="ion-android-phone" ng-click="callTo(contractInfo.telephone)"></i>
+=======
                 <i class="ion-android-call" ng-click="callTo(contractInfo.telephone)"></i>
+>>>>>>> a39a8211113a4ee98df47158946e50853310ae3d
             </div>
         </div>
 
