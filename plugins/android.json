@@ -8,12 +8,6 @@
     },
     "installed_plugins": {
         "com.cordova.plugins.sms": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "com.jcjee.plugins.emailcomposer": {
-            "PACKAGE_NAME": "com.ionicframework.ionicmaterialdesign506749"
-        },
-        "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "com.aidantech.pkns"
         }
     },
