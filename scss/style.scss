@@ -2126,6 +2126,12 @@ md-sidenav {
           font-weight: 500;
         }
       }
+      .col-300{
+        text-align: center;
+        border-left: 1px solid $color_border_menu_dashboard;
+        border-bottom: 1px solid $color_border_menu_dashboard;
+
+      }
     }
   }//end panel section
 
