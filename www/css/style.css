@@ -1339,6 +1339,10 @@ md-sidenav {
         #menu-dashboard-content .menu-panel .row .col-33 p {
           font-size: 12px;
           font-weight: 500; }
+      #menu-dashboard-content .menu-panel .row .col-300 {
+        text-align: center;
+        border-left: 1px solid rgba(225, 225, 225, 0.69);
+        border-bottom: 1px solid rgba(225, 225, 225, 0.69); }
   #menu-dashboard-content .menu-dashboard-footer {
     color: gray;
     padding: 10px; }
