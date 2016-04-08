@@ -147,6 +147,58 @@ module.exports = [
         "clobbers": [
             "window.plugins.socialsharing"
         ]
+    },
+    {
+        "file": "plugins/org.devgeeks.Canvas2ImagePlugin/www/Canvas2ImagePlugin.js",
+        "id": "org.devgeeks.Canvas2ImagePlugin.Canvas2ImagePlugin",
+        "clobbers": [
+            "window.canvas2ImagePlugin"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-image-picker/www/imagepicker.js",
+        "id": "cordova-plugin-image-picker.ImagePicker",
+        "clobbers": [
+            "plugins.imagePicker"
+        ]
+    },
+    {
+        "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+        "id": "cordova-sqlite-storage.SQLitePlugin",
+        "clobbers": [
+            "SQLitePlugin"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-flashlight/www/Flashlight.js",
+        "id": "cordova-plugin-flashlight.Flashlight",
+        "clobbers": [
+            "window.plugins.flashlight"
+        ]
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification.js",
+        "id": "de.appplant.cordova.plugin.local-notification.LocalNotification",
+        "clobbers": [
+            "cordova.plugins.notification.local",
+            "plugin.notification.local"
+        ]
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification-core.js",
+        "id": "de.appplant.cordova.plugin.local-notification.LocalNotification.Core",
+        "clobbers": [
+            "cordova.plugins.notification.local.core",
+            "plugin.notification.local.core"
+        ]
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification-util.js",
+        "id": "de.appplant.cordova.plugin.local-notification.LocalNotification.Util",
+        "merges": [
+            "cordova.plugins.notification.local.core",
+            "plugin.notification.local.core"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -160,11 +212,17 @@ module.exports.metadata =
     "cordova-plugin-camera": "2.1.0",
     "cordova-plugin-vibration": "2.1.0",
     "cordova-plugin-device": "1.1.1",
-    "cordova-plugin-console": "1.0.2",
     "cordova-plugin-whitelist": "1.2.1",
     "cordova-plugin-transport-security": "0.1.1",
     "cordova-plugin-inappbrowser": "1.3.0",
-    "cordova-plugin-x-socialsharing": "5.0.12-dev"
+    "cordova-plugin-x-socialsharing": "5.0.12-dev",
+    "org.devgeeks.Canvas2ImagePlugin": "0.6.0",
+    "cordova-plugin-image-picker": "1.0.8",
+    "cordova-sqlite-storage": "0.7.14",
+    "cordova-plugin-flashlight": "3.0.0",
+    "de.appplant.cordova.plugin.local-notification": "0.8.4",
+    "cordova-plugin-app-event": "1.2.0",
+    "cordova-plugin-console": "1.0.2"
 };
 // BOTTOM OF METADATA
 });

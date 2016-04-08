@@ -31,9 +31,6 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.aidantech.pkns"
         },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.aidantech.pkns"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.aidantech.pkns"
         },
@@ -45,7 +42,29 @@
         },
         "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "com.aidantech.pkns"
+        },
+        "org.devgeeks.Canvas2ImagePlugin": {
+            "PACKAGE_NAME": "com.aidantech.pkns"
+        },
+        "cordova-plugin-image-picker": {
+            "PACKAGE_NAME": "com.aidantech.pkns"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.aidantech.pkns"
+        },
+        "cordova-plugin-flashlight": {
+            "PACKAGE_NAME": "com.aidantech.pkns"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "com.aidantech.pkns"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.aidantech.pkns"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "com.aidantech.pkns"
+        }
+    }
 }
